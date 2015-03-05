@@ -1,0 +1,136 @@
+/*	Layout	*/
+body{
+	margin:0;
+	padding:0;
+}
+#sidebar{
+	width: 300px;
+	height: 100%;
+	position:fixed;
+	top:0;
+	left:0;
+	padding: 0 30px;
+}
+#content{
+	margin: 0 30px 40px 390px;
+}
+
+
+
+/*	Typography	*/
+html{
+	font-family:'Open Sans', sans-serif;
+	line-height:1.4;
+	font-size:15px;
+}
+h1, .titleCase{
+	font-family:'Alegreya', serif;
+	font-weight:normal;
+}
+h1{ font-size:40px; }
+h2{ font-size: 38px; font-weight:normal; }
+.titleCase{
+	font-size:18px;
+}
+
+h1,h2{
+	margin: 24px 0 16px 0;
+	line-height:44px;
+}
+#content p, #content li{
+	max-width: 600px;
+}
+li{	padding-bottom: 6px; }
+
+
+
+
+/*	Colors	*/
+body{
+	background: #eff1f3;
+	color:#162332;
+}
+#sidebar{
+	background:#162332;
+	color:#fff;
+}
+a{
+	color:#26566A;
+}
+a:hover, a:active{
+	color: #223853;
+}
+#sidebar a, #sidebar a:hover, #sidebar a:active{
+	color:#fff;
+}
+
+/*	buttons	*/
+a.btn, input.btn {
+	background: #223853;
+	color: #eff1f3;
+	padding: 0.5em 0.8em;
+	text-decoration: none;
+	box-shadow: 2px 1px 2px 0px rgba(0,0,0,0.38);
+}
+
+a.btn:hover, input.btn:hover {
+	color:#fff;
+	background: #112b49;
+	text-decoration: none;
+	box-shadow: 1px 0px 1px 0px rgba(0,0,0,0.28);
+}
+#sidebar a.btn:hover, #sidebar input.btn:hover {
+	background: #213e61;
+}
+
+/*	sidebar	*/
+#tagline{
+	max-width:280px;
+}
+#sidebarCTA{
+	margin:30px 0;
+}
+#sidebarContact{
+	position:absolute;
+	bottom: 30px;
+	width:300px;
+	opacity: 0.6;
+}
+#sidebarContact span{
+	float:right;
+}
+
+/*	paypal	*/
+#paypalSelect, #paypalButton{
+	display:inline-block;
+	margin-right: 20px;
+	height: 60px;
+	vertical-align:top;
+	margin-top: 20px;
+}
+#paypalSelect{	padding-top: 12px; }
+
+
+@media screen and (max-width:1023px) {
+	#sidebar, #content{
+		position:relative;
+		margin: 0;
+		padding: 12px;
+		width:auto;
+	}
+	#sidebar{
+		text-align:center;
+	}
+	#tagline{
+		margin: 0 auto;
+	}
+	
+	#paypalSelect, #paypalButton{
+		display:block;
+		margin: 20px auto;
+		height:auto;
+	}
+	#sidebarContact{
+		display:none;
+	}
+}
